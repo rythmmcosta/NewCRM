@@ -1,0 +1,209 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - img [ref=e7]
+      - generic [ref=e10]: Internal Server Error
+    - button "Copy as Markdown" [ref=e11] [cursor=pointer]:
+      - img [ref=e12]
+      - generic [ref=e15]: Copy as Markdown
+  - generic [ref=e18]:
+    - generic [ref=e19]:
+      - heading "Error" [level=1] [ref=e20]
+      - generic [ref=e22]: app\Filament\Resources\Employees\Tables\EmployeesTable.php:44
+      - paragraph [ref=e23]: Class "Filament\Tables\Actions\EditAction" not found
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - generic [ref=e27]: LARAVEL
+          - generic [ref=e28]: 12.60.2
+        - generic [ref=e29]:
+          - generic [ref=e30]: PHP
+          - generic [ref=e31]: 8.2.12
+      - generic [ref=e32]:
+        - img [ref=e33]
+        - text: UNHANDLED
+      - generic [ref=e36]: CODE 0
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - img [ref=e40]
+        - text: "500"
+      - generic [ref=e43]:
+        - img [ref=e44]
+        - text: GET
+      - generic [ref=e47]: http://127.0.0.1:21471/admin/employees
+      - button [ref=e48] [cursor=pointer]:
+        - img [ref=e49]
+  - generic [ref=e53]:
+    - generic [ref=e54]:
+      - generic [ref=e55]:
+        - img [ref=e57]
+        - heading "Exception trace" [level=3] [ref=e60]
+      - generic [ref=e61]:
+        - generic [ref=e62]:
+          - generic [ref=e63] [cursor=pointer]:
+            - generic [ref=e66]:
+              - code [ref=e70]:
+                - generic [ref=e71]: App\Filament\Resources\Employees\Tables\EmployeesTable::configure(object(Filament\Tables\Table))
+              - generic [ref=e73]: app\Filament\Resources\Employees\Tables\EmployeesTable.php:44
+            - button [ref=e75]:
+              - img [ref=e76]
+          - code [ref=e84]:
+            - generic [ref=e85]: 39 ])
+            - generic [ref=e86]: 40 ->filters([
+            - generic [ref=e87]: 41 //
+            - generic [ref=e88]: 42 ])
+            - generic [ref=e89]: 43 ->actions([
+            - generic [ref=e90]: 44 EditAction::make(),
+            - generic [ref=e91]: 45 Action::make('createUser')
+            - generic [ref=e92]: 46 ->label('Create User')
+            - generic [ref=e93]: 47 ->icon('heroicon-o-user-plus')
+            - generic [ref=e94]: 48 ->color('success')
+            - generic [ref=e95]: 49 ->hidden(fn (Employee $record) => $record->user_id !== null)
+            - generic [ref=e96]: 50 ->form([
+            - generic [ref=e97]: 51 TextInput::make('password')
+            - generic [ref=e98]: 52 ->password()
+            - generic [ref=e99]: 53 ->required()
+            - generic [ref=e100]: 54 ->minLength(8),
+            - generic [ref=e101]: 55 ])
+            - generic [ref=e102]: "56"
+        - generic [ref=e104] [cursor=pointer]:
+          - generic [ref=e107]:
+            - code [ref=e111]:
+              - generic [ref=e112]: App\Filament\Resources\Employees\Tables\EmployeesTable::configure(object(Filament\Tables\Table))
+            - generic [ref=e114]: app\Filament\Resources\Employees\EmployeeResource.php:30
+          - button [ref=e116]:
+            - img [ref=e117]
+        - generic [ref=e122] [cursor=pointer]:
+          - img [ref=e123]
+          - generic [ref=e127]: 78 vendor frames
+          - button [ref=e128]:
+            - img [ref=e129]
+        - generic [ref=e134] [cursor=pointer]:
+          - generic [ref=e137]:
+            - code [ref=e141]:
+              - generic [ref=e142]: Illuminate\Foundation\Application->handleRequest(object(Illuminate\Http\Request))
+            - generic [ref=e144]: public\index.php:20
+          - button [ref=e146]:
+            - img [ref=e147]
+        - generic [ref=e152] [cursor=pointer]:
+          - img [ref=e153]
+          - generic [ref=e157]: 1 vendor frame
+          - button [ref=e158]:
+            - img [ref=e159]
+    - generic [ref=e163]:
+      - generic [ref=e164]:
+        - generic [ref=e165]:
+          - img [ref=e167]
+          - heading "Queries" [level=3] [ref=e169]
+        - generic [ref=e171]: 1-5 of 5
+      - generic [ref=e172]:
+        - generic [ref=e173]:
+          - generic [ref=e174]:
+            - generic [ref=e175]:
+              - img [ref=e176]
+              - generic [ref=e178]: mysql
+            - code [ref=e182]:
+              - generic [ref=e183]: "select * from `sessions` where `id` = '4syixJ1L4GmCF7PWCGm2jwzSew84PmT3iho5zsbi' limit 1"
+          - generic [ref=e184]: 5.64ms
+        - generic [ref=e185]:
+          - generic [ref=e186]:
+            - generic [ref=e187]:
+              - img [ref=e188]
+              - generic [ref=e190]: mysql
+            - code [ref=e194]:
+              - generic [ref=e195]: "select * from `users` where `id` = 2 limit 1"
+          - generic [ref=e196]: 0.78ms
+        - generic [ref=e197]:
+          - generic [ref=e198]:
+            - generic [ref=e199]:
+              - img [ref=e200]
+              - generic [ref=e202]: mysql
+            - code [ref=e206]:
+              - generic [ref=e207]: "select `roles`.*, `model_has_roles`.`model_id` as `pivot_model_id`, `model_has_roles`.`role_id` as `pivot_role_id`, `model_has_roles`.`model_type` as `pivot_model_type` from `roles` inner join `model_has_roles` on `roles`.`id` = `model_has_roles`.`role_id` where `model_has_roles`.`model_id` in (2) and `model_has_roles`.`model_type` = 'App\\Models\\User'"
+          - generic [ref=e208]: 0.96ms
+        - generic [ref=e209]:
+          - generic [ref=e210]:
+            - generic [ref=e211]:
+              - img [ref=e212]
+              - generic [ref=e214]: mysql
+            - code [ref=e218]:
+              - generic [ref=e219]: "select * from `cache` where `key` in ('laravel-cache-spatie.permission.cache')"
+          - generic [ref=e220]: 0.55ms
+        - generic [ref=e221]:
+          - generic [ref=e222]:
+            - generic [ref=e223]:
+              - img [ref=e224]
+              - generic [ref=e226]: mysql
+            - code [ref=e230]:
+              - generic [ref=e231]: "select `permissions`.*, `model_has_permissions`.`model_id` as `pivot_model_id`, `model_has_permissions`.`permission_id` as `pivot_permission_id`, `model_has_permissions`.`model_type` as `pivot_model_type` from `permissions` inner join `model_has_permissions` on `permissions`.`id` = `model_has_permissions`.`permission_id` where `model_has_permissions`.`model_id` in (2) and `model_has_permissions`.`model_type` = 'App\\Models\\User'"
+          - generic [ref=e232]: 0.63ms
+  - generic [ref=e234]:
+    - generic [ref=e235]:
+      - heading "Headers" [level=2] [ref=e236]
+      - generic [ref=e237]:
+        - generic [ref=e238]:
+          - generic [ref=e239]: host
+          - generic [ref=e241]: 127.0.0.1:21471
+        - generic [ref=e242]:
+          - generic [ref=e243]: connection
+          - generic [ref=e245]: keep-alive
+        - generic [ref=e246]:
+          - generic [ref=e247]: sec-ch-ua
+          - generic [ref=e249]: "\"Chromium\";v=\"148\", \"Google Chrome\";v=\"148\", \"Not/A)Brand\";v=\"99\""
+        - generic [ref=e250]:
+          - generic [ref=e251]: sec-ch-ua-mobile
+          - generic [ref=e253]: "?0"
+        - generic [ref=e254]:
+          - generic [ref=e255]: sec-ch-ua-platform
+          - generic [ref=e257]: "\"Windows\""
+        - generic [ref=e258]:
+          - generic [ref=e259]: upgrade-insecure-requests
+          - generic [ref=e261]: "1"
+        - generic [ref=e262]:
+          - generic [ref=e263]: user-agent
+          - generic [ref=e265]: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+        - generic [ref=e266]:
+          - generic [ref=e267]: accept
+          - generic [ref=e269]: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+        - generic [ref=e270]:
+          - generic [ref=e271]: sec-fetch-site
+          - generic [ref=e273]: none
+        - generic [ref=e274]:
+          - generic [ref=e275]: sec-fetch-mode
+          - generic [ref=e277]: navigate
+        - generic [ref=e278]:
+          - generic [ref=e279]: sec-fetch-user
+          - generic [ref=e281]: "?1"
+        - generic [ref=e282]:
+          - generic [ref=e283]: sec-fetch-dest
+          - generic [ref=e285]: document
+        - generic [ref=e286]:
+          - generic [ref=e287]: accept-encoding
+          - generic [ref=e289]: gzip, deflate, br, zstd
+        - generic [ref=e290]:
+          - generic [ref=e291]: accept-language
+          - generic [ref=e293]: en-US,en;q=0.9
+        - generic [ref=e294]:
+          - generic [ref=e295]: cookie
+          - generic [ref=e297]: XSRF-TOKEN=eyJpdiI6InQ4dzdHc09hcnJweGE2Y2ZLOWFodUE9PSIsInZhbHVlIjoiOUc4WkUrYUNNQ1ErVTc2YVV4TU1GU3hQQXdKUDVIY3VvUCtDbXRDSVZLSzlERTJBTWsycHdIMDZMUnRSSVJRSW5LL0FGNFRCTWFmdVVuZnhUMjhiN3htS2pnSHFjYUpJT2Zja29XYWl4cW9BSVV1bkUzT0o5TVVnUjNlcldqeXkiLCJtYWMiOiIzMDc4YzU4OGY4MTZmMTVlZGFhZTQ4MTY3ZGNkY2VjZDJlNGEzZWU4OTYwNWE2YWI3ZmJlOGVjMDliMWMyMjk3IiwidGFnIjoiIn0%3D; laravel-session=eyJpdiI6Inc5bHlDSXVtdVZ1T2FKRkpaY0p6UEE9PSIsInZhbHVlIjoidTM4bTFhY2drcEhOaGhHM0tWa3lBL1B3UHE4WjlKci9oR3J5Z3hqdDVHSDU2Yko4dDF1UW1OK3ZkK3VyQlE1aE9SRmxtT3ZOcjlQSzNrZGlqQmx6SXlzTU5tR3pyQ3gzZG9pclUxQTBONjlleXN5Rk5LZWVEc0xQeFczYW1wZ1ciLCJtYWMiOiJhNWQ0NTdkNGU4NWYwNWQzZGMxZjkzOTYzM2RmNTg0OGVlNTc5MGNkZDY2NDAzNTNmOGVmNDJiMjUxZTA2YWFlIiwidGFnIjoiIn0%3D
+    - generic [ref=e298]:
+      - heading "Body" [level=2] [ref=e299]
+      - generic [ref=e300]: // No request body
+    - generic [ref=e301]:
+      - heading "Routing" [level=2] [ref=e302]
+      - generic [ref=e303]:
+        - generic [ref=e304]:
+          - generic [ref=e305]: controller
+          - generic [ref=e307]: App\Filament\Resources\Employees\Pages\ListEmployees
+        - generic [ref=e308]:
+          - generic [ref=e309]: route name
+          - generic [ref=e311]: filament.admin.resources.employees.index
+        - generic [ref=e312]:
+          - generic [ref=e313]: middleware
+          - generic [ref=e315]: panel:admin, Illuminate\Cookie\Middleware\EncryptCookies, Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse, Illuminate\Session\Middleware\StartSession, Filament\Http\Middleware\AuthenticateSession, Illuminate\View\Middleware\ShareErrorsFromSession, Illuminate\Foundation\Http\Middleware\VerifyCsrfToken, Illuminate\Routing\Middleware\SubstituteBindings, Filament\Http\Middleware\DisableBladeIconComponents, Filament\Http\Middleware\DispatchServingFilamentEvent, Filament\Http\Middleware\Authenticate
+    - generic [ref=e316]:
+      - heading "Routing parameters" [level=2] [ref=e317]
+      - generic [ref=e318]: // No routing parameters
+  - generic [ref=e321]:
+    - img [ref=e323]
+    - img [ref=e3361]

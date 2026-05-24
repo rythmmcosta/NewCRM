@@ -1,0 +1,228 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e3]:
+    - button "Expand sidebar" [ref=e4] [cursor=pointer]:
+      - img [ref=e5]
+    - generic [ref=e7]:
+      - generic [ref=e10]:
+        - generic [ref=e11]: Global search
+        - generic [ref=e12]:
+          - img [ref=e14]
+          - searchbox "Global search" [ref=e17]
+      - button "User menu" [ref=e20] [cursor=pointer]:
+        - img "Avatar of Admin User" [ref=e21]
+  - generic [ref=e22]:
+    - complementary [ref=e23]:
+      - link "Laravel" [ref=e27] [cursor=pointer]:
+        - /url: http://127.0.0.1:21471/admin
+        - generic [ref=e28]: Laravel
+      - navigation [ref=e29]:
+        - list [ref=e30]:
+          - listitem [ref=e31]:
+            - list [ref=e32]:
+              - listitem [ref=e33]:
+                - link "Dashboard" [ref=e34] [cursor=pointer]:
+                  - /url: http://127.0.0.1:21471/admin
+                  - img [ref=e35]
+                  - generic [ref=e37]: Dashboard
+              - listitem [ref=e38]:
+                - link "Employees" [ref=e39] [cursor=pointer]:
+                  - /url: http://127.0.0.1:21471/admin/employees
+                  - img [ref=e40]
+                  - generic [ref=e42]: Employees
+              - listitem [ref=e43]:
+                - link "Users" [ref=e44] [cursor=pointer]:
+                  - /url: http://127.0.0.1:21471/admin/users
+                  - img [ref=e45]
+                  - generic [ref=e47]: Users
+          - listitem [ref=e48]:
+            - generic [ref=e49] [cursor=pointer]:
+              - generic [ref=e50]: Filament Shield
+              - button "Filament Shield" [expanded] [ref=e51]:
+                - img [ref=e52]
+            - list [ref=e54]:
+              - listitem [ref=e55]:
+                - link "Roles" [ref=e56] [cursor=pointer]:
+                  - /url: http://127.0.0.1:21471/admin/shield/roles
+                  - img [ref=e57]
+                  - generic [ref=e59]: Roles
+    - main [ref=e61]:
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - navigation [ref=e66]:
+              - list [ref=e67]:
+                - listitem [ref=e68]:
+                  - link "Roles" [ref=e69] [cursor=pointer]:
+                    - /url: http://127.0.0.1:21471/admin/shield/roles
+                - listitem [ref=e70]:
+                  - img [ref=e71]
+                  - link "sales person" [ref=e73] [cursor=pointer]:
+                    - /url: http://127.0.0.1:21471/admin/shield/roles/2
+                - listitem [ref=e74]:
+                  - img [ref=e75]
+                  - generic [ref=e77]: Edit
+            - heading "Edit sales person" [level=1] [ref=e78]
+          - button "Delete" [ref=e81] [cursor=pointer]
+        - generic [ref=e87]:
+          - generic [ref=e91]:
+            - generic [ref=e101]:
+              - generic [ref=e104]:
+                - generic [ref=e108]:
+                  - text: Name
+                  - superscript [ref=e109]: "*"
+                - textbox "Name*" [ref=e113]: sales person
+              - generic [ref=e116]:
+                - generic [ref=e120]: Guard Name
+                - textbox "Guard Name" [ref=e124]: web
+              - generic [ref=e127]:
+                - generic [ref=e130]:
+                  - switch "Select All" [ref=e131] [cursor=pointer]:
+                    - generic:
+                      - generic:
+                        - img
+                      - generic:
+                        - img
+                  - generic [ref=e132]: Select All
+                - generic [ref=e137]: Enables/Disables all Permissions for this role
+            - generic [ref=e140]:
+              - tablist "Permissions" [ref=e141]:
+                - tab "Resources 33" [ref=e142] [cursor=pointer]:
+                  - generic [ref=e143]: Resources
+                  - generic [ref=e146]: "33"
+              - tabpanel "Employee App\\Models\\Employee App\\ filament\\ resources\\ employees\\ employee resource View Any View Create Update Delete Restore Force Delete Force Delete Any Restore Any Replicate Reorder User App\\Models\\User App\\ filament\\ resources\\ users\\ user resource View Any View Create Update Delete Restore Force Delete Force Delete Any Restore Any Replicate Reorder Role Spatie\\Permission\\Models\\Role Bezhan salleh\\ filament shield\\ resources\\ roles\\ role resource View Any View Create Update Delete Restore Force Delete Force Delete Any Restore Any Replicate Reorder" [ref=e147]:
+                - generic [ref=e152]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157] [cursor=pointer]:
+                      - generic [ref=e158]:
+                        - heading "Employee" [level=2] [ref=e159]
+                        - paragraph [ref=e160]: App\Models\Employee
+                      - button [ref=e161]:
+                        - img [ref=e162]
+                    - generic [ref=e168]:
+                      - generic [ref=e169]: App\ filament\ resources\ employees\ employee resource
+                      - generic [ref=e172]:
+                        - generic [ref=e174]:
+                          - checkbox "View Any" [ref=e175]
+                          - generic [ref=e177]: View Any
+                        - generic [ref=e179]:
+                          - checkbox "View" [ref=e180]
+                          - generic [ref=e182]: View
+                        - generic [ref=e184]:
+                          - checkbox "Create" [ref=e185]
+                          - generic [ref=e187]: Create
+                        - generic [ref=e189]:
+                          - checkbox "Update" [ref=e190]
+                          - generic [ref=e192]: Update
+                        - generic [ref=e194]:
+                          - checkbox "Delete" [ref=e195]
+                          - generic [ref=e197]: Delete
+                        - generic [ref=e199]:
+                          - checkbox "Restore" [ref=e200]
+                          - generic [ref=e202]: Restore
+                        - generic [ref=e204]:
+                          - checkbox "Force Delete" [ref=e205]
+                          - generic [ref=e207]: Force Delete
+                        - generic [ref=e209]:
+                          - checkbox "Force Delete Any" [ref=e210]
+                          - generic [ref=e212]: Force Delete Any
+                        - generic [ref=e214]:
+                          - checkbox "Restore Any" [ref=e215]
+                          - generic [ref=e217]: Restore Any
+                        - generic [ref=e219]:
+                          - checkbox "Replicate" [ref=e220]
+                          - generic [ref=e222]: Replicate
+                        - generic [ref=e224]:
+                          - checkbox "Reorder" [ref=e225]
+                          - generic [ref=e227]: Reorder
+                  - generic [ref=e231]:
+                    - generic [ref=e232] [cursor=pointer]:
+                      - generic [ref=e233]:
+                        - heading "User" [level=2] [ref=e234]
+                        - paragraph [ref=e235]: App\Models\User
+                      - button [ref=e236]:
+                        - img [ref=e237]
+                    - generic [ref=e243]:
+                      - generic [ref=e244]: App\ filament\ resources\ users\ user resource
+                      - generic [ref=e247]:
+                        - generic [ref=e249]:
+                          - checkbox "View Any" [ref=e250]
+                          - generic [ref=e252]: View Any
+                        - generic [ref=e254]:
+                          - checkbox "View" [ref=e255]
+                          - generic [ref=e257]: View
+                        - generic [ref=e259]:
+                          - checkbox "Create" [ref=e260]
+                          - generic [ref=e262]: Create
+                        - generic [ref=e264]:
+                          - checkbox "Update" [ref=e265]
+                          - generic [ref=e267]: Update
+                        - generic [ref=e269]:
+                          - checkbox "Delete" [ref=e270]
+                          - generic [ref=e272]: Delete
+                        - generic [ref=e274]:
+                          - checkbox "Restore" [ref=e275]
+                          - generic [ref=e277]: Restore
+                        - generic [ref=e279]:
+                          - checkbox "Force Delete" [ref=e280]
+                          - generic [ref=e282]: Force Delete
+                        - generic [ref=e284]:
+                          - checkbox "Force Delete Any" [ref=e285]
+                          - generic [ref=e287]: Force Delete Any
+                        - generic [ref=e289]:
+                          - checkbox "Restore Any" [ref=e290]
+                          - generic [ref=e292]: Restore Any
+                        - generic [ref=e294]:
+                          - checkbox "Replicate" [ref=e295]
+                          - generic [ref=e297]: Replicate
+                        - generic [ref=e299]:
+                          - checkbox "Reorder" [ref=e300]
+                          - generic [ref=e302]: Reorder
+                  - generic [ref=e306]:
+                    - generic [ref=e307] [cursor=pointer]:
+                      - generic [ref=e308]:
+                        - heading "Role" [level=2] [ref=e309]
+                        - paragraph [ref=e310]: Spatie\Permission\Models\Role
+                      - button [ref=e311]:
+                        - img [ref=e312]
+                    - generic [ref=e318]:
+                      - generic [ref=e319]: Bezhan salleh\ filament shield\ resources\ roles\ role resource
+                      - generic [ref=e322]:
+                        - generic [ref=e324]:
+                          - checkbox "View Any" [ref=e325]
+                          - generic [ref=e327]: View Any
+                        - generic [ref=e329]:
+                          - checkbox "View" [ref=e330]
+                          - generic [ref=e332]: View
+                        - generic [ref=e334]:
+                          - checkbox "Create" [ref=e335]
+                          - generic [ref=e337]: Create
+                        - generic [ref=e339]:
+                          - checkbox "Update" [ref=e340]
+                          - generic [ref=e342]: Update
+                        - generic [ref=e344]:
+                          - checkbox "Delete" [ref=e345]
+                          - generic [ref=e347]: Delete
+                        - generic [ref=e349]:
+                          - checkbox "Restore" [ref=e350]
+                          - generic [ref=e352]: Restore
+                        - generic [ref=e354]:
+                          - checkbox "Force Delete" [ref=e355]
+                          - generic [ref=e357]: Force Delete
+                        - generic [ref=e359]:
+                          - checkbox "Force Delete Any" [ref=e360]
+                          - generic [ref=e362]: Force Delete Any
+                        - generic [ref=e364]:
+                          - checkbox "Restore Any" [ref=e365]
+                          - generic [ref=e367]: Restore Any
+                        - generic [ref=e369]:
+                          - checkbox "Replicate" [ref=e370]
+                          - generic [ref=e372]: Replicate
+                        - generic [ref=e374]:
+                          - checkbox "Reorder" [ref=e375]
+                          - generic [ref=e377]: Reorder
+          - generic [ref=e382]:
+            - button "Save changes" [ref=e383] [cursor=pointer]:
+              - generic [ref=e384]: Save changes
+            - button "Cancel" [ref=e385] [cursor=pointer]
+  - generic:
+    - status

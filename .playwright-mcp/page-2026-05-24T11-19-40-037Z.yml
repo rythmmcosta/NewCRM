@@ -1,0 +1,52 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e3]:
+    - link "Laravel" [ref=e5] [cursor=pointer]:
+      - /url: http://127.0.0.1:21471/app
+      - generic [ref=e6]: Laravel
+    - button "User menu" [ref=e10] [cursor=pointer]:
+      - img "Avatar of Hridoy Islam" [ref=e11]
+  - generic [ref=e12]:
+    - complementary [ref=e14]:
+      - navigation [ref=e15]:
+        - list [ref=e16]:
+          - listitem [ref=e17]:
+            - list [ref=e18]:
+              - listitem [ref=e19]:
+                - link "Dashboard" [ref=e20] [cursor=pointer]:
+                  - /url: http://127.0.0.1:21471/app
+                  - img [ref=e21]
+                  - generic [ref=e23]: Dashboard
+              - listitem [ref=e24]:
+                - link "Profiles" [ref=e25] [cursor=pointer]:
+                  - /url: http://127.0.0.1:21471/app/profile
+                  - img [ref=e26]
+                  - generic [ref=e28]: Profiles
+    - main [ref=e30]:
+      - generic [ref=e32]:
+        - heading "Dashboard" [level=1] [ref=e35]
+        - generic [ref=e42]:
+          - generic [ref=e46]:
+            - img "Avatar of Hridoy Islam" [ref=e47]
+            - generic [ref=e48]:
+              - heading "Welcome" [level=2] [ref=e49]
+              - paragraph [ref=e50]: Hridoy Islam
+            - button "Sign out" [ref=e52] [cursor=pointer]:
+              - img [ref=e53]
+              - text: Sign out
+          - generic [ref=e59]:
+            - generic [ref=e60]:
+              - link "Filament" [ref=e61] [cursor=pointer]:
+                - /url: https://filamentphp.com
+                - img "Filament" [ref=e62]
+              - paragraph [ref=e73]: v5.6.5
+            - generic [ref=e74]:
+              - link "Documentation" [ref=e75] [cursor=pointer]:
+                - /url: https://filamentphp.com/docs
+                - img [ref=e76]
+                - text: Documentation
+              - link "GitHub" [ref=e78] [cursor=pointer]:
+                - /url: https://github.com/filamentphp/filament
+                - img [ref=e80]
+                - text: GitHub
+  - generic:
+    - status

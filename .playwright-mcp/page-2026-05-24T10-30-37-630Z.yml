@@ -1,0 +1,89 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e3]:
+    - button "Expand sidebar" [ref=e4] [cursor=pointer]:
+      - img [ref=e5]
+    - generic [ref=e7]:
+      - generic [ref=e10]:
+        - generic [ref=e11]: Global search
+        - generic [ref=e12]:
+          - img [ref=e14]
+          - searchbox "Global search" [ref=e17]
+      - button "User menu" [ref=e20] [cursor=pointer]:
+        - img "Avatar of Admin User" [ref=e21]
+  - generic [ref=e22]:
+    - complementary [ref=e23]:
+      - link "Laravel" [ref=e27] [cursor=pointer]:
+        - /url: http://127.0.0.1:21471/admin
+        - generic [ref=e28]: Laravel
+      - navigation [ref=e29]:
+        - list [ref=e30]:
+          - listitem [ref=e31]:
+            - list [ref=e32]:
+              - listitem [ref=e33]:
+                - link "Dashboard" [ref=e34] [cursor=pointer]:
+                  - /url: http://127.0.0.1:21471/admin
+                  - img [ref=e35]
+                  - generic [ref=e37]: Dashboard
+              - listitem [ref=e38]:
+                - link "Employees" [ref=e39] [cursor=pointer]:
+                  - /url: http://127.0.0.1:21471/admin/employees
+                  - img [ref=e40]
+                  - generic [ref=e42]: Employees
+              - listitem [ref=e43]:
+                - link "Users" [ref=e44] [cursor=pointer]:
+                  - /url: http://127.0.0.1:21471/admin/users
+                  - img [ref=e45]
+                  - generic [ref=e47]: Users
+          - listitem [ref=e48]:
+            - generic [ref=e49] [cursor=pointer]:
+              - generic [ref=e50]: Filament Shield
+              - button "Filament Shield" [expanded] [ref=e51]:
+                - img [ref=e52]
+            - list [ref=e54]:
+              - listitem [ref=e55]:
+                - link "Roles" [ref=e56] [cursor=pointer]:
+                  - /url: http://127.0.0.1:21471/admin/shield/roles
+                  - img [ref=e57]
+                  - generic [ref=e59]: Roles
+    - main [ref=e61]:
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - navigation [ref=e66]:
+              - list [ref=e67]:
+                - listitem [ref=e68]:
+                  - link "Employees" [ref=e69] [cursor=pointer]:
+                    - /url: http://127.0.0.1:21471/admin/employees
+                - listitem [ref=e70]:
+                  - img [ref=e71]
+                  - generic [ref=e73]: Edit
+            - heading "Edit Employee" [level=1] [ref=e74]
+          - button "Delete" [ref=e77] [cursor=pointer]
+        - generic [ref=e83]:
+          - generic [ref=e87]:
+            - generic [ref=e90]:
+              - generic [ref=e94]:
+                - text: Name
+                - superscript [ref=e95]: "*"
+              - textbox "Name*" [ref=e99]: Hridoy Islam
+            - generic [ref=e102]:
+              - generic [ref=e106]:
+                - text: Email address
+                - superscript [ref=e107]: "*"
+              - textbox "Email address*" [ref=e111]: hridoy@esmart.com.bd
+            - generic [ref=e114]:
+              - generic [ref=e118]: Phone
+              - textbox "Phone" [ref=e122]: "01712345678"
+            - generic [ref=e125]:
+              - generic [ref=e129]: Designation
+              - textbox "Designation" [ref=e133]: Full Stack Developer
+            - generic [ref=e136]:
+              - generic [ref=e140]: Roles
+              - button "Select an option" [ref=e147] [cursor=pointer]:
+                - generic [ref=e149]: Select an option
+          - generic [ref=e154]:
+            - button "Save changes" [ref=e155] [cursor=pointer]:
+              - generic [ref=e156]: Save changes
+            - button "Cancel" [ref=e157] [cursor=pointer]
+  - generic:
+    - status
