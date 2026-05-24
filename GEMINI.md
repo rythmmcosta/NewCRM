@@ -27,3 +27,8 @@ Detailed documentation is stored in `docs/filament-v5/`:
 
 ## Execution Instructions
 RUN COMMAND: git pull origin main && php artisan migrate && npm run dev -- --port 21471
+
+RUN ACTION:
+1. Run "git add ." to stage all normal project files (this safely respects the .gitignore layout).
+2. Commit the changes: "git commit -m 'syncing workspace updates from office'"
+3. Force-push the current state to the cloud branch: "git push origin main"
