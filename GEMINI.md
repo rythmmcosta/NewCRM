@@ -28,7 +28,10 @@ Detailed documentation is stored in `docs/filament-v5/`:
 ## Execution Instructions
 RUN COMMAND: git pull origin main && php artisan migrate && npm run dev -- --port 21471
 
-RUN ACTION:
-1. Run "git add ." to stage all normal project files (this safely respects the .gitignore layout).
-2. Commit the changes: "git commit -m 'syncing workspace updates from office'"
-3. Force-push the current state to the cloud branch: "git push origin main"
+### AGENT LOOP ACTION
+1. Run: git pull origin master
+2. Run: git add .
+3. Run: git commit -m "syncing project files from office"
+4. Run: git push origin master
+5. Run: echo "Office PC Gemini is active and finished at $(date)" >> GEMINI_STATUS.md
+6. Run: git add GEMINI_STATUS.md && git commit -m "status update: done" && git push origin master
