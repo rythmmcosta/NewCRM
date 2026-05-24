@@ -24,3 +24,6 @@ Detailed documentation is stored in `docs/filament-v5/`:
 1. **Research**: Consult the `docs/` and use specialized skills for any Filament/UI task.
 2. **Implementation**: Follow the patterns defined in the skills (e.g., reactive forms, GSAP animations).
 3. **Verification**: Use Filament's testing utilities and ensure Livewire v4 compatibility.
+
+## Execution Instructions
+RUN COMMAND: git pull origin main && php artisan migrate && npm run dev -- --port 21471
